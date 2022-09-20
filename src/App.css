@@ -1,38 +1,99 @@
-.App {
-  text-align: center;
+*{
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/*==========
+Estilos Navbar
+============*/
+
+.navbar{
+  width: 100%;
+  height: 4rem;
+  padding: 0 3rem;
+  display: flex;
+  justify-content: space-between;
+  background-color: #000;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar__logo-container{
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+.navbar__logo{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 3rem;
+  font-weight: 900;
+  color: #fff;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar__container-horizontal{
+  width: 50%;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.navbar__item{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 1.2rem;
+  transition: all ease .3s;
+}
+.navbar__item:hover{
+  transform: translateY(-5px);
+}
+
+.navbar__item-container{
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  transition: all ease .5s;
+  position: relative;
+}
+.navbar__item-container:hover{
+  background-color: red;
 }
 
-.App-link {
-  color: #61dafb;
+.menu__vertical{
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  padding: 1rem;
+  display: none;
+  list-style: none;
+  width: 100%;
+  background-color: rgba(0, 0, 0, .5);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar__item-container:hover .menu__vertical{
+  display: block;
 }
+
+.menu__vertical-item{
+  transition: al ease .3s;
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.menu__vertical li{
+  transition: all ease .3s;
+}
+.menu__vertical li:hover{
+  transform: translateX(10px);
+}
+
+
+/*==========
+Fin Estilos Navbar
+============*/
