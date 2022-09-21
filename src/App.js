@@ -1,11 +1,13 @@
 import './App.css';
 import NavBar from './components/NavBar';
+import ItemListContainer from './components/ItemListContainer';
 
 function App() {
   return (
-    <header className="header">
+    <div className='App__container'>
       <NavBar/>
-    </header>
+      <ItemListContainer greeting={'Hola CoderHouse!'}/>
+    </div>
   );
 }
 
