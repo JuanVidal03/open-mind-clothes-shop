@@ -1,5 +1,7 @@
 import CartWidget from "./CartWidget";
-//inicio navbar
+import SocialMedia from './SocialMedia';
+
+
 const navbar = () =>{
 
     return(
@@ -11,48 +13,49 @@ const navbar = () =>{
 
             <ul className="navbar__container-horizontal">
                 <li className="navbar__item-container">
-                    <a href="#" className="navbar__item">Hombre</a>
+                    <a className="navbar__item">Hombre</a>
                     <ul className="menu__vertical">
-                        <li><a href="#" className="menu__vertical-item">Camisas</a></li>
-                        <li><a href="#" className="menu__vertical-item">Pantalones</a></li>
-                        <li><a href="#" className="menu__vertical-item">Zapatos</a></li>
+                        <li><a className="menu__vertical-item">Camisas</a></li>
+                        <li><a className="menu__vertical-item">Pantalones</a></li>
+                        <li><a className="menu__vertical-item">Zapatos</a></li>
 
                     </ul>
                 </li>
 
                 <li className="navbar__item-container">
-                    <a href="#" className="navbar__item">Mujer</a>
+                    <a className="navbar__item">Mujer</a>
                     <ul className="menu__vertical">
-                        <li><a href="#" className="menu__vertical-item">Camisas</a></li>
-                        <li><a href="#" className="menu__vertical-item">Pantalones</a></li>
-                        <li><a href="#" className="menu__vertical-item">Zapatos</a></li>
+                        <li><a className="menu__vertical-item">Camisas</a></li>
+                        <li><a className="menu__vertical-item">Pantalones</a></li>
+                        <li><a className="menu__vertical-item">Zapatos</a></li>
 
                     </ul>
                 </li>
 
                 <li className="navbar__item-container">
-                    <a href="#" className="navbar__item">Niños</a>
+                    <a className="navbar__item">Niños</a>
                     <ul className="menu__vertical">
-                        <li><a href="#" className="menu__vertical-item">Camisas</a></li>
-                        <li><a href="#" className="menu__vertical-item">Pantalones</a></li>
-                        <li><a href="#" className="menu__vertical-item">Zapatos</a></li>
+                        <li><a className="menu__vertical-item">Camisas</a></li>
+                        <li><a className="menu__vertical-item">Pantalones</a></li>
+                        <li><a className="menu__vertical-item">Zapatos</a></li>
 
                     </ul>
                 </li>
 
                 <li className="navbar__item-container">
-                    <a href="#" className="navbar__item">Nuevo</a>
+                    <a className="navbar__item">Nuevo</a>
                     <ul className="menu__vertical">
-                        <li><a href="#" className="menu__vertical-item">Camisas</a></li>
-                        <li><a href="#" className="menu__vertical-item">Pantalones</a></li>
-                        <li><a href="#" className="menu__vertical-item">Zapatos</a></li>
+                        <li><a className="menu__vertical-item">Camisas</a></li>
+                        <li><a className="menu__vertical-item">Pantalones</a></li>
+                        <li><a className="menu__vertical-item">Zapatos</a></li>
 
                     </ul>
                 </li>
             </ul>
+
+            <CartWidget/>
+            <SocialMedia/>
         </nav>
-
-
 
         //INCIO NAVBAR MOBILE
     );
