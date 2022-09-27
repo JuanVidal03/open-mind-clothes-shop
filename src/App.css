@@ -4,112 +4,183 @@
   box-sizing: border-box;
 }
 
+::selection{
+  background-color: #212529;
+  color: #fff;
+}
+
+h1{font-size: 3.5rem;}
+h2{font-size: 3rem;}
+h3{font-size: 2.5rem;}
+h4{font-size: 2rem;}
+h5{font-size: 1.5rem;}
+h6{font-size: 1.3rem;}
+p{font-size: 17px;}
+
 /*==========
 Estilos Navbar
 ============*/
-
-.navbar{
+header{
+  background-color: #212529;
   width: 100%;
   height: 5rem;
-  padding: 0 3rem;
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  background-color: #212529;
+  padding: 0 3rem;
 }
 
-.navbar__logo-container{
-  width: 50%;
-  display: flex;
-  align-items: center;
-}
 .navbar__logo{
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 3rem;
-  font-weight: 900;
   color: #fff;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 900;
 }
 
-.navbar__container-horizontal{
-  width: 40%;
-  list-style: none;
+.navbar{
+  position: absolute;
+  top: -700px;
+  left: -2000px;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
 }
-.navbar__item{
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+.navbar.active{
+  width: 100%;
   display: block;
-  color: #fff;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight: 900;
-  font-size: 1.2rem;
-  cursor: pointer;
-  transition: all ease .3s;
-}
-.navbar__item:hover{
-  transform: translateY(-5px);
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  top: 30%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  transition: all ease .5s;
 }
 
-.navbar__item-container{
+.navbar__item{
+  list-style: none;
+}
+
+.navbar__item a{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-decoration: none;
+  color: #fff ;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-right: 1rem;
+}
+
+
+@media (min-width: 768px) {
+  .mobileMenu__container{
+    display: none;
+  }
+  .navbar{
+    position: initial;
+    margin: 0;
+  }
+  .navbar__item a{
+    font-size: 1rem;
+    color: #fff;
+    display: inline;
+    transition: all ease .5s;
+  }
+  .navbar__item a:hover{
+    border-bottom: solid #fff 1px;
+  }
+}
+
+/*estilos menu hamburguesa*/
+.burguerMenu__container{
+  width: 35px;
+  height: 30px;
+  margin: 10px 10px;
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+}
+.burguerMenu__container span{
+  background-color:#fff;
+  position: absolute;
+  border-radius: 2px;
+  transition: .3s cubic-bezier(.8, .5, .2, 1.4);
+  width:100%;
+  height: 4px;
+  transition-duration: 500ms
+}
+.burguerMenu__container span:nth-child(1){
+  top:0px;
+  left: 0px;
+}
+.burguerMenu__container span:nth-child(2){
+  top:13px;
+  left: 0px;
+  opacity:1;
+}
+.burguerMenu__container span:nth-child(3){
+  bottom:0px;
+  left: 0px;
+}
+.burguerMenu__container:not(.open):hover span:nth-child(1){
+  transform: rotate(-3deg) scaleY(1.1);
+}
+.burgerMenu__container:not(.open):hover span:nth-child(2){
+  transform: rotate(3deg) scaleY(1.1);
+}
+.burguerMenu__container:not(.open):hover span:nth-child(3){
+  transform: rotate(-4deg) scaleY(1.1);
+}
+.burguerMenu__container.open span:nth-child(1){
+  transform: rotate(45deg);
+  top: 13px;
+}
+.burguerMenu__container.open span:nth-child(2){
+  opacity:0;
+}
+.burguerMenu__container.open span:nth-child(3){
+  transform: rotate(-45deg);
+  top: 13px;
+}
+
+.initial{
+  position: absolute;
+  background-color: #212529;
+  top: -1000px;
+  left: -1000px;
   width: 100%;
   height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  z-index: -1;
   transition: all ease .5s;
-  position: relative;
-}
-.navbar__item-container:hover{
-  background-color: red;
 }
 
-.menu__vertical{
-  position: absolute;
-  top: 100%;
-  left: 0%;
-  padding: 1rem;
-  display: none;
-  list-style: none;
-  width: 150px;
-  background-color: rgba(0, 0, 0, .5);
+.initial.active{
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  border-radius: 0 0 80% 0;
 }
 
-.navbar__item-container:hover .menu__vertical{
-  display: block;
-}
 
-.menu__vertical-item{
-  transition: al ease .3s;
-  text-decoration: none;
-  color: #fff;
-  text-transform: uppercase;
-  font-weight: 500;
-  cursor: pointer;
-}
-.menu__vertical li{
-  transition: all ease .3s;
-}
-.menu__vertical li:hover{
-  transform: translateX(10px);
-}
 
 /*estilos cart y social media*/
-.cart__container{
-  width: 5%;
+.socialMedia__container{
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.socialMedia__container{
-  width: 5%;
+.icons__container{
   display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
 }
+
+.socialIcon{
+  padding-right: 1rem;
+}
+
 .icon{
   color: #fff;
   cursor: pointer;
@@ -121,6 +192,7 @@ Estilos Navbar
   color: red;
   transform: translateY(-5px);
 }
+
 
 /*==========
 Fin Estilos Navbar
