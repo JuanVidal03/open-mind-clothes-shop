@@ -34,6 +34,7 @@ header{
   color: #fff;
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-weight: 900;
+  cursor: pointer;
 }
 
 .navbar{
