@@ -228,6 +228,121 @@ Fin Estilos greeting
 
 
 /*==========
-Estilos 
+Estilos Detalles del productos
+============*/
+.ItemDetailContainer{
+  width: 100%;
+  padding: 3rem 5rem 0rem 5rem;
+  display: flex;
+
+}
+
+.ItemDetail__column1{
+  width: 50%;
+}
+
+.ItemDetail__column2{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.ItemDetail__title{
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+.ItemDetail__text{
+  margin-bottom: 2rem;
+}
+
+.ItemDetail__btn-añadir{
+  position: relative;
+  width: 10rem;
+  margin-top: 1rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  height: 2.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  cursor: pointer;
+  color: #fff;
+  background-color: #212529;
+  border: none;
+  transition: all ease .5s;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.ItemDetail__btn-añadir::after{
+  position: absolute;
+  top: -100%;
+  right: 0;
+  content: '';
+  width: 10rem;
+  height: 2.5rem;
+  background-color: red;
+  transition: all ease .3s;
+  z-index: -1;
+}
+
+.ItemDetail__btn-añadir:hover{
+  z-index: 1;
+  color: #fff;
+}
+
+.ItemDetail__btn-añadir:hover::after{
+  top: 0;
+}
+/*==========
+Fin Estilos Detalles del productos
 ============*/
 
+/*==========
+Estilos Item Counter Container
+============*/
+.ItemCounter{
+  margin-top: 1rem;
+}
+
+.ItemCounter__stock{
+  font-weight: 700;
+  color: red;
+}
+
+.ItemCounter__container{
+  width: 7rem;
+  height: 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 50px;
+  border: solid 1px #f2f2f2;
+  margin-top: .5rem;
+}
+
+.ItemCounter__btn{
+  width: 2rem;
+  height: 100%;
+  cursor: pointer;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.ItemCounter__btn:hover{
+  background-color: #d4d3d3;
+
+}
+
+.ItemCounter__counter{
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.3rem;
+}
+
+
+
+/*==========
+Fin Estilos Item Counter Container
+============*/
