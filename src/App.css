@@ -203,9 +203,15 @@ Fin Estilos Navbar
 Estilos greeting
 ============*/
 
+.itemListContainer{
+  width: 100%;
+  height: 100%;
+  padding: 0 5rem;
+}
+
 .greeting__container{
   width: 100%;
-  height: 80vh;
+  height: 10rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -219,3 +225,9 @@ Estilos greeting
 /*==========
 Fin Estilos greeting
 ============*/
+
+
+/*==========
+Estilos 
+============*/
+

@@ -23,10 +23,10 @@ const Navbar = () =>{
 
             <nav className="navbar__container">
                 <ul className= {`navbar ${clicked ? 'active' : ''}`}>
-                    <li className="navbar__item"><a href="#" onClick={handleClick}>Inicio</a></li>
-                    <li className="navbar__item"><a href="#" onClick={handleClick}>Hombre</a></li>
-                    <li className="navbar__item"><a href="#" onClick={handleClick}>Mujer</a></li>
-                    <li className="navbar__item"><a href="#" onClick={handleClick}>Niños</a></li>
+                    <li className="navbar__item"><a href='#' onClick={handleClick}>Inicio</a></li>
+                    <li className="navbar__item"><a href='#'  onClick={handleClick}>Hombre</a></li>
+                    <li className="navbar__item"><a href='#'  onClick={handleClick}>Mujer</a></li>
+                    <li className="navbar__item"><a href='#'  onClick={handleClick}>Niños</a></li>
 
                 </ul>
             </nav>

@@ -2,7 +2,7 @@
     {
         "id": 1,
         "Categoria": "Hombre",
-        "Imagen": "../productos-img/camiseta-manga-corta-hombre.jpg",
+        "Imagen": "./productos-img/camiseta-manga-corta-hombre.jpg",
         "Nombre": "Camiseta Manga Corta Para Hombre",
         "Descripcion": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor eligendi aliquam dignissimos quasi cum eveniet error quis minima sit quae. Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
         "Precio": 30
@@ -10,7 +10,7 @@
     {
         "id": 2,
         "Categoria": "Hombre",
-        "Imagen": "../productos-img/chaqueta-hombre.jpg",
+        "Imagen": "./productos-img/chaqueta-hombre.jpg",
         "Nombre": "Chaqueta Para Hombre",
         "Descripcion": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor eligendi aliquam dignissimos quasi cum eveniet error quis minima sit quae. Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
         "Precio": 76
@@ -18,7 +18,7 @@
     {
         "id": 3,
         "Categoria": "Hombre",
-        "Imagen": "../productos-img/camiseta-manga-larga-hombre.jpg",
+        "Imagen": "./productos-img/camiseta-manga-larga-hombre.jpg",
         "Nombre": "Camisa Manga Larga Para Hombre",
         "Descripcion": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor eligendi aliquam dignissimos quasi cum eveniet error quis minima sit quae. Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
         "Precio": 50
@@ -26,7 +26,7 @@
     {
         "id": 4,
         "Categoria": "Mujer",
-        "Imagen": "../productos-img/camiseta-manga-corta-mujer.jpg",
+        "Imagen": "./productos-img/camiseta-manga-corta-mujer.jpg",
         "Nombre": "Camiseta Manga Corta Para Mujer",
         "Descripcion": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor eligendi aliquam dignissimos quasi cum eveniet error quis minima sit quae. Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
         "Precio": 30
@@ -42,7 +42,7 @@
     {
         "id": 6,
         "Categoria": "Mujer",
-        "Imagen": "../productos-img/buso-mujer.jpg",
+        "Imagen": "./productos-img/buso-mujer.jpg",
         "Nombre": "Buso Para Mujer",
         "Descripcion": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor eligendi aliquam dignissimos quasi cum eveniet error quis minima sit quae. Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
         "Precio": 45
@@ -50,7 +50,7 @@
     {
         "id": 7,
         "Categoria": "Niños",
-        "Imagen": "../productos-img/camiseta-manga-corta-niño.jpg",
+        "Imagen": "./productos-img/camiseta-manga-corta-niño.jpg",
         "Nombre": "Camiseta Manga Corta Para Niño",
         "Descripcion": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor eligendi aliquam dignissimos quasi cum eveniet error quis minima sit quae. Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
         "Precio": 40
@@ -58,7 +58,7 @@
     {
         "id": 8,
         "Categoria": "Niños",
-        "Imagen": "../productos-img/vestido-niña.jpg",
+        "Imagen": "./productos-img/vestido-niña.jpg",
         "Nombre": "Vestido para niña",
         "Descripcion": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor eligendi aliquam dignissimos quasi cum eveniet error quis minima sit quae. Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
         "Precio": 89
@@ -66,7 +66,7 @@
     {
         "id": 9,
         "Categoria": "Niños",
-        "Imagen": "../productos-img/chaqueta-niño.jpg",
+        "Imagen": "./productos-img/chaqueta-niño.jpg",
         "Nombre": "Chaqueta Para Niño",
         "Descripcion": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor eligendi aliquam dignissimos quasi cum eveniet error quis minima sit quae. Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
         "Precio": 100
