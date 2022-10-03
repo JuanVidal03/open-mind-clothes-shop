@@ -1,11 +1,13 @@
 import { useEffect, useState } from "react";
 import Item from "./Item";
+import { useParams } from "react-router-dom";
 
 const ItemListContainer = ({greeting}) =>{
 
+    const { category } = useParams();
     const [productos, setProductos] = useState([]);
 
-    const urlProductos = './productos.json';
+    const urlProductos = window.location.origin + '/productos.json';
 
     useEffect(() =>{
         const obtenerData = async() =>{
@@ -13,7 +15,7 @@ const ItemListContainer = ({greeting}) =>{
             const res = await fetch(urlProductos);
             const data = await res.json();
 
-            setProductos(data)
+            setProductos(data);
 
         }
         obtenerData();
@@ -26,10 +28,12 @@ const ItemListContainer = ({greeting}) =>{
             <div className="greeting__container">
                 <h1 className="greeting">{greeting}</h1>
             </div>
+            <div className="productos__container">
             {
                 productos.map(item => <Item producto={item} key={item.id}/> )
 
             }
+            </div>
         </div>
     );
 };

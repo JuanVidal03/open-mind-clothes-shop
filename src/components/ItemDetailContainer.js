@@ -29,6 +29,7 @@ const ItemDetailContainer = () => {
     }, [])
 
     return(
+
         <div className="ItemDetailContainer">
             <div className="ItemDetail__column1">
                 <img src={`${window.location.origin}${item.Imagen}`}/>

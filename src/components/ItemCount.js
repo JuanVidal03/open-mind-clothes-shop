@@ -3,14 +3,16 @@ import { useState } from "react";
 
 const ItemCount = () =>{
 
-    //contadores para tener como limite 5 y como minimo 0
+    //contadores para tener como limite 5 y como minimo 0, también se va a alterar el número de stock
     const [counter, setCounter] = useState(0);
+    const [stock, seStock] = useState(5);
 
     const aumentarCounter = () =>{
         if (counter === 5) {
-            setCounter(counter)
+            setCounter(counter);
         }else{
             setCounter(counter + 1);
+            seStock(stock - 1)
         }
     }
 
@@ -19,19 +21,9 @@ const ItemCount = () =>{
             setCounter(counter)
         }else{
             setCounter(counter - 1);
+            seStock(stock + 1)
         }
     }
-
-    //stock que funciona dependiendo al funcionamiento de los contadores
-    const [stock, seStock] = useState(5);
-
-    // const stockNumber = () => {
-    //     if () {
-            
-    //     } else {
-            
-    //     }
-    // }
 
 
     return(

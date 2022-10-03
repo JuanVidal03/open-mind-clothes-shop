@@ -2,7 +2,7 @@
     {
         "id": 1,
         "Categoria": "Men",
-        "Imagen": "/productos-img/camiseta-manga-corta-hombre.jpg",
+        "Imagen": "/productos-img/camiseta-manga-corta-hombre.png",
         "Nombre": "Camiseta Manga Corta Para Hombre",
         "Descripcion": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor eligendi aliquam dignissimos quasi cum eveniet error quis minima sit quae. Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
         "Precio": 30
@@ -26,7 +26,7 @@
     {
         "id": 4,
         "Categoria": "Women",
-        "Imagen": "/productos-img/camiseta-manga-corta-mujer.jpg",
+        "Imagen": "/productos-img/camiseta-manga-corta-mujer.png",
         "Nombre": "Camiseta Manga Corta Para Mujer",
         "Descripcion": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor eligendi aliquam dignissimos quasi cum eveniet error quis minima sit quae. Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
         "Precio": 30
@@ -34,7 +34,7 @@
     {
         "id": 5,
         "Categoria": "Women",
-        "Imagen": "/productos-img/chaqueta-mujer.jpg",
+        "Imagen": "/productos-img/chaqueta-mujer.png",
         "Nombre": "Chaqueta Para Mujer",
         "Descripcion": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor eligendi aliquam dignissimos quasi cum eveniet error quis minima sit quae. Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
         "Precio": 75

@@ -206,7 +206,7 @@ Estilos greeting
 .itemListContainer{
   width: 100%;
   height: 100%;
-  padding: 0 5rem;
+  padding: 0 5rem 5rem 5rem;
 }
 
 .greeting__container{
@@ -230,11 +230,12 @@ Fin Estilos greeting
 /*==========
 Estilos Detalles del productos
 ============*/
+
 .ItemDetailContainer{
   width: 100%;
   padding: 3rem 5rem 0rem 5rem;
   display: flex;
-
+  gap: 3rem;
 }
 
 .ItemDetail__column1{
@@ -341,8 +342,68 @@ Estilos Item Counter Container
   font-size: 1.3rem;
 }
 
+/*==========
+Fin Estilos Item Counter Container
+============*/
+
 
 
 /*==========
-Fin Estilos Item Counter Container
+Estilos productos home page
+============*/
+
+.productos__container{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.product__container{
+  width: 20rem;
+  text-align: center;
+  border: solid 1px #ada4a4;
+  cursor: pointer;
+  transition: all ease .5s;
+  overflow: hidden;
+}
+
+.product__container:hover{
+  transform: scale(1.1);
+  box-shadow: 0px 0px 10px 1px #ada4a4;
+  border-radius: 20px;
+}
+
+.product__container:hover .product__img{
+  transform: translateY(-1rem);
+}
+
+.product__container:hover .product-img__container{
+  filter: grayscale(0);
+}
+
+.product-text__container{
+  padding: 1rem;
+  background-color: #f2f2f2;
+}
+
+.product-img__container{
+  transition: all ease .5s;
+  padding: 2rem;
+  filter: grayscale(1);
+}
+
+.product__img{
+  width: 100%;
+  transition: all ease .3s;
+}
+
+.product__price{
+  padding-top: 1rem;
+}
+
+/*==========
+Fin estilos home page productos
 ============*/

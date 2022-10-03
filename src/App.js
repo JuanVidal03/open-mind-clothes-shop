@@ -12,7 +12,7 @@ function App() {
       <Router>
         <Routes>
             <Route path='/' element={<ItemListContainer greeting={'¡Bienvenidos!'}/>}/>
-            <Route path='/category/:id' element={<ItemListContainer greeting={'¡Bienvenidos!'}/>}/>
+            <Route path='/category/:id' element={<ItemListContainer/>}/>
             <Route path='/item/:id' element={<ItemDetailContainer/>}/>
         </Routes>
       
