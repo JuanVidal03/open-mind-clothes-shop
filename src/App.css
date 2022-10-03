@@ -36,6 +36,10 @@ header{
   font-weight: 900;
   cursor: pointer;
 }
+.navbar__logo a{
+  text-decoration: none;
+  color: #fff;
+}
 
 .navbar{
   position: absolute;
@@ -402,7 +406,17 @@ Estilos productos home page
 
 .product__price{
   padding-top: 1rem;
+  color: #000;
 }
+
+.product__title{
+  color: #000;
+}
+
+a{
+  text-decoration: none;
+}
+
 
 /*==========
 Fin estilos home page productos

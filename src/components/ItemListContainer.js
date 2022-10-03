@@ -4,8 +4,10 @@ import { useParams } from "react-router-dom";
 
 const ItemListContainer = ({greeting}) =>{
 
-    const { category } = useParams();
+    const { id } = useParams();
+    console.log(id);
     const [productos, setProductos] = useState([]);
+
 
     const urlProductos = window.location.origin + '/productos.json';
 
@@ -17,9 +19,27 @@ const ItemListContainer = ({greeting}) =>{
 
             setProductos(data);
 
-        }
+           if (typeof id != 'undefined') {
+            
+               let test = [];
+    
+               data.map(producto => {
+                    if(producto.Categoria == id){
+    
+                        test.push(producto);
+                    }
+                })
+                
+                setProductos(test);
+           } else {
+            setProductos(data);
+           }
+
+        };
+
         obtenerData();
-    }, [])
+
+    }, []);
         
     
     
@@ -29,10 +49,9 @@ const ItemListContainer = ({greeting}) =>{
                 <h1 className="greeting">{greeting}</h1>
             </div>
             <div className="productos__container">
-            {
-                productos.map(item => <Item producto={item} key={item.id}/> )
-
-            }
+                {
+                    productos.map(item => <Item producto={item} key={item.id}/> )
+                }
             </div>
         </div>
     );

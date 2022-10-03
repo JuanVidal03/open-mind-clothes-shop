@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import CartWidget from "./CartWidget";
 import SocialMedia from './SocialMedia';
 import BurguerButton from "./BurguerButton";
+import { Link, NavLink } from 'react-router-dom';
 
 
 const Navbar = () =>{
@@ -18,15 +19,16 @@ const Navbar = () =>{
         //INICIO NAVBAR DESKTOP
         <header>
             <div className="navbar__logo-container">
-                <h3 className="navbar__logo">OMIND</h3>
+                <h3 className="navbar__logo"><Link to={`/`}>OMIND</Link></h3>
             </div>
 
             <nav className="navbar__container">
                 <ul className= {`navbar ${clicked ? 'active' : ''}`}>
-                    <li className="navbar__item"><a href='#'>Inicio</a></li>
-                    <li className="navbar__item"><a href='#'>Hombre</a></li>
-                    <li className="navbar__item"><a href='#'>Mujer</a></li>
-                    <li className="navbar__item"><a href='#'>Niños</a></li>
+                    
+                    <li className="navbar__item"><Link to={`/`}>Inicio</Link></li>
+                    <li className="navbar__item"><NavLink to={`/category/men`}>Hombre</NavLink></li>
+                    <li className="navbar__item"><NavLink to={`/category/women`}>Mujer</NavLink></li>
+                    <li className="navbar__item"><NavLink to={`/category/kids`}>Niños</NavLink></li>
 
                 </ul>
             </nav>
