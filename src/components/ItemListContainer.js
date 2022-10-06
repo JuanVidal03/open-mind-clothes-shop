@@ -39,7 +39,7 @@ const ItemListContainer = ({greeting}) =>{
 
         obtenerData();
 
-    }, []);
+    }, [id]);
         
     
     
